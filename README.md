@@ -151,63 +151,39 @@ README.md
 
 # 📷 System Screenshots
 
-## Login Page
+## 🔐 Login Page
 
-*(Add screenshot here)*
-
-```text
-screenshots/login.png
-```
+![Login Page](screenshots/login.png)
 
 ---
 
-## Applicant Dashboard
+## 👤 Applicant Dashboard
 
-*(Add screenshot here)*
-
-```text
-screenshots/applicant-dashboard.png
-```
+![Applicant Dashboard](screenshots/applicant-dashboard.png)
 
 ---
 
-## DPO Dashboard
+## 👨‍💼 Data Protection Officer Dashboard
 
-*(Add screenshot here)*
-
-```text
-screenshots/dpo-dashboard.png
-```
+![DPO Dashboard](screenshots/dpo-dashboard.png)
 
 ---
 
-## Deputy Director Dashboard
+## 👨‍💼 Deputy Director Dashboard
 
-*(Add screenshot here)*
-
-```text
-screenshots/deputy-dashboard.png
-```
+![Deputy Director Dashboard](screenshots/deputy-dashboard.png)
 
 ---
 
-## Application Form
+## 📝 Application Form
 
-*(Add screenshot here)*
-
-```text
-screenshots/application-form.png
-```
+![Application Form](screenshots/application-form.png)
 
 ---
 
-## Application Records
+## 📋 Application Records
 
-*(Add screenshot here)*
-
-```text
-screenshots/application-records.png
-```
+![Application Records](screenshots/application-records.png)
 
 ---
 
@@ -322,7 +298,7 @@ Potential enhancements include:
 
 Bachelor of Information Technology (Hons.)
 
-**Specialization:** Data Analytics & Big Data
+**Specialization:** Data Analytics (Big Data) & Software Development & Web Development
 
 Universiti Teknologi MARA (UiTM)
 
