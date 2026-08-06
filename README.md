@@ -1,58 +1,335 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📄 LZNK Personal Data Application System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> **Internship Project**  
+> Lembaga Zakat Negeri Kedah (LZNK)  
+> Bachelor of Information Technology (Hons.) – Data Analytics (Big Data) & Software Development & Mobile App Development 
+> Universiti Teknologi MARA (UiTM)
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# 📌 Project Overview
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The **LZNK Personal Data Application System** is a Laravel-based web application developed during my internship at **Lembaga Zakat Negeri Kedah (LZNK)**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+The system was designed to streamline and digitize the personal data application process by replacing manual workflows with an efficient online platform. It enables applicants to submit requests electronically while allowing officers to review, approve, and manage applications through a centralized system.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# 🎯 Project Objectives
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Digitize the personal data application process.
+- Reduce manual paperwork and administrative workload.
+- Improve application tracking and approval efficiency.
+- Provide a secure role-based access system.
+- Improve communication between applicants and officers.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+---
 
-## Agentic Development
+# ✨ System Features
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 👤 Applicant Module
 
-```bash
-composer require laravel/boost --dev
+Applicants can:
 
-php artisan boost:install
+- Register an account
+- Log in securely
+- Submit personal data application forms
+- Upload required documents
+- Track application status
+- View application history
+- Download agreements (if available)
+
+---
+
+## 👨‍💼 Data Protection Officer (DPO)
+
+The Data Protection Officer can:
+
+- Review submitted applications
+- View applicant information
+- Generate agreement documents
+- Upload requested documents
+- Approve or reject applications
+- Forward applications for final approval
+- Manage application records
+
+---
+
+## 👨‍💼 Deputy Director Module
+
+The Deputy Director can:
+
+- Review applications
+- Approve applications
+- Reject applications
+- View application history
+- Monitor application progress
+
+---
+
+# 🔄 Application Workflow
+
+```text
+                Applicant
+                    │
+                    ▼
+        Submit Application Request
+                    │
+                    ▼
+     Data Protection Officer (DPO)
+            │                 │
+            │                 │
+     Incomplete          Complete
+            │                 │
+            ▼                 ▼
+ Return to Applicant     Forward to
+    for Editing      Deputy Director
+            │                 │
+            │                 ▼
+            │        Review Application
+            │                 │
+            │          ┌──────┴──────┐
+            │          │             │
+            │      Approve        Reject
+            │          │             │
+            └──────────┴─────────────┘
+                       │
+                       ▼
+          Application Status Updated
+                       │
+                       ▼
+                  Applicant
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+# 🛠 Technologies Used
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Category | Technology |
+|----------|------------|
+| Framework | Laravel |
+| Programming Language | PHP |
+| Frontend | HTML5, CSS3, JavaScript |
+| Styling | Bootstrap |
+| Database | MySQL |
+| Development Tools | Visual Studio Code |
+| Local Server | Laragon |
+| Version Control | Git & GitHub |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+# 🔐 User Roles
 
-## Security Vulnerabilities
+| Role | Responsibilities |
+|------|------------------|
+| Applicant | Submit and track applications |
+| Data Protection Officer | Review, manage and approve requests |
+| Deputy Director | Final approval and rejection |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+# 📂 Project Structure
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```
+app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+storage/
+tests/
+
+artisan
+composer.json
+package.json
+README.md
+```
+
+---
+
+# 📷 System Screenshots
+
+## Login Page
+
+*(Add screenshot here)*
+
+```text
+screenshots/login.png
+```
+
+---
+
+## Applicant Dashboard
+
+*(Add screenshot here)*
+
+```text
+screenshots/applicant-dashboard.png
+```
+
+---
+
+## DPO Dashboard
+
+*(Add screenshot here)*
+
+```text
+screenshots/dpo-dashboard.png
+```
+
+---
+
+## Deputy Director Dashboard
+
+*(Add screenshot here)*
+
+```text
+screenshots/deputy-dashboard.png
+```
+
+---
+
+## Application Form
+
+*(Add screenshot here)*
+
+```text
+screenshots/application-form.png
+```
+
+---
+
+## Application Records
+
+*(Add screenshot here)*
+
+```text
+screenshots/application-records.png
+```
+
+---
+
+# 🚀 Installation Guide
+
+## Requirements
+
+- PHP 8.x
+- Composer
+- MySQL
+- Laragon / XAMPP
+- Node.js
+
+---
+
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/yahyarofiee/LZNK-Personal-Data-Application-System.git
+```
+
+Install Composer dependencies
+
+```bash
+composer install
+```
+
+Install Node packages
+
+```bash
+npm install
+```
+
+Copy environment file
+
+```bash
+cp .env.example .env
+```
+
+Generate application key
+
+```bash
+php artisan key:generate
+```
+
+Run database migration
+
+```bash
+php artisan migrate
+```
+
+Start the development server
+
+```bash
+php artisan serve
+```
+
+---
+
+# 📈 Skills Demonstrated
+
+- Laravel Development
+- PHP Programming
+- CRUD Operations
+- Authentication & Authorization
+- Role-Based Access Control (RBAC)
+- MVC Architecture
+- MySQL Database Design
+- Form Validation
+- File Upload Handling
+- Workflow Automation
+- System Testing
+- Git Version Control
+
+---
+
+# 🎓 Learning Outcomes
+
+Throughout this internship project, I gained practical experience in:
+
+- Developing enterprise web applications using Laravel
+- Implementing role-based authentication
+- Designing relational databases
+- Building CRUD modules
+- Managing application workflows
+- Working with MVC architecture
+- Collaborating with supervisors during system development
+- Applying software development best practices
+
+---
+
+# 🔮 Future Improvements
+
+Potential enhancements include:
+
+- Email notification integration
+- Dashboard analytics
+- Audit log module
+- Advanced search and filtering
+- API integration
+- Two-factor authentication (2FA)
+- Cloud deployment
+- Mobile responsive improvements
+
+---
+
+# 👨‍💻 Author
+
+**Yahya Naim bin Md Rofiee**
+
+Bachelor of Information Technology (Hons.)
+
+**Specialization:** Data Analytics & Big Data
+
+Universiti Teknologi MARA (UiTM)
+
+---
+
+# 📄 Disclaimer
+
+This project was developed during my internship at **Lembaga Zakat Negeri Kedah (LZNK)**.
+
+To protect organizational confidentiality and personal data, sensitive information, credentials, and confidential datasets have been removed from this repository. The source code is shared solely for educational and portfolio purposes.
